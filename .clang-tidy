@@ -1,0 +1,18 @@
+Checks: '*,
+  -llvmlibc-implementation-in-namespace,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -modernize-use-trailing-return-type,
+  -llvmlibc-callee-namespace,
+  -altera-unroll-loops,
+  -altera-id-dependent-backward-branch,
+  -llvmlibc-restrict-system-libc-headers,
+  -fuchsia-default-arguments-calls,
+  -readability-identifier-length,
+  -altera-struct-pack-align,
+  -readability-isolate-declaration,
+'
+
+CheckOptions:
+  - { key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic,
+      value: 1 }
