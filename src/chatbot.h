@@ -49,8 +49,12 @@ class ChatBot {
   // getters / setters
   void SetCurrentNode(GraphNode *node);
   void SetRootNode(GraphNode *rootNode) { _rootNode = rootNode; }
-  void SetChatLogicHandle(ChatLogic *chatLogic) { _chatLogic = chatLogic; }
-  ChatLogic *GetChatLogicHandle() { return _chatLogic; }
+  void SetChatLogicHandle(ChatLogic *chatLogic) {
+    _chatLogic = chatLogic;
+  }
+  ChatLogic *GetChatLogicHandle() {
+    return _chatLogic;
+  }
   wxBitmap *GetImageHandle() { return _image; }
 
   // communication

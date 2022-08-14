@@ -135,14 +135,6 @@ ChatBotPanelDialog::ChatBotPanelDialog(wxWindow *parent, wxWindowID id)
 }
 
 ChatBotPanelDialog::~ChatBotPanelDialog() {
-  //// STUDENT CODE
-  ////
-
-  // Below is not needed now that _chatLogic is a smart pointer
-  // delete _chatLogic;
-
-  ////
-  //// EOF STUDENT CODE
 }
 
 void ChatBotPanelDialog::AddDialogItem(wxString text, bool isFromUser) {
