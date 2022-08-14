@@ -77,7 +77,6 @@ ChatBot &ChatBot::operator=(const ChatBot &rhs) {
     _currentNode = rhs._currentNode;
     _rootNode = rhs._rootNode;
     _chatLogic = rhs._chatLogic;
-    _chatLogic->SetChatbotHandle(this);
   }
   return *this;
 }
@@ -90,7 +89,6 @@ ChatBot &ChatBot::operator=(ChatBot &&rhs) noexcept {
     _currentNode = rhs._currentNode;
     _rootNode = rhs._rootNode;
     _chatLogic = rhs._chatLogic;
-    _chatLogic->SetChatbotHandle(this);
 
     rhs._image = NULL; // NOLINT
     rhs._currentNode = nullptr;
