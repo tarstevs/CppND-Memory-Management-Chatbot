@@ -40,8 +40,7 @@ ChatBot::ChatBot(std::string filename) { // NOLINT
 ChatBot::ChatBot(const ChatBot &rhs) {
   if (this != &rhs) {
     std::cout << "ChatBot Copy Constructor" << std::endl;
-
-    _image = rhs._image;
+    
     *_image = *rhs._image;
     _currentNode = rhs._currentNode;
     _rootNode = rhs._rootNode;
@@ -55,7 +54,6 @@ ChatBot::ChatBot(ChatBot &&rhs) noexcept {
     std::cout << "ChatBot Move Constructor" << std::endl;
 
     _image = rhs._image;
-    *_image = *rhs._image;
     _currentNode = rhs._currentNode;
     _rootNode = rhs._rootNode;
     _chatLogic = rhs._chatLogic;
@@ -73,7 +71,6 @@ ChatBot &ChatBot::operator=(const ChatBot &rhs) {
   if (this != &rhs) {
     std::cout << "ChatBot Copy Assignment" << std::endl;
 
-    _image = rhs._image;
     *_image = *rhs._image;
     _currentNode = rhs._currentNode;
     _rootNode = rhs._rootNode;
